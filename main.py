@@ -1,12 +1,14 @@
-from dotenv import load_dotenv
-load_dotenv()
 import dropbox
 import markdown
 import os
 import time
 import logging
+from dotenv import load_dotenv
 
-# Security: Fetches credentials from environment variables
+# Load variables from .env file (if it exists)
+load_dotenv()
+
+# Configuration - Fetches from environment variables
 APP_KEY = os.environ.get('DROPBOX_APP_KEY')
 APP_SECRET = os.environ.get('DROPBOX_APP_SECRET')
 REFRESH_TOKEN = os.environ.get('DROPBOX_REFRESH_TOKEN')
