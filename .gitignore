@@ -1,0 +1,9 @@
+# Secrets
+.env
+
+# Generated Content
+web_output/
+
+# Python Cache
+__pycache__/
+*.pyc
